@@ -1,6 +1,6 @@
 package com.github.archessmn.SeecraftPlugin_v0_0_5;
 
-import com.github.archessmn.SeecraftPlugin_v0_0_4.tasks.SkipNightAndStorm;
+import com.github.archessmn.SeecraftPlugin_v0_0_5.tasks.SkipNightAndStorm;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Listener;

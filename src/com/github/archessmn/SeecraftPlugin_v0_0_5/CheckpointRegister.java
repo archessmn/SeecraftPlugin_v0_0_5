@@ -24,8 +24,8 @@ public class CheckpointRegister implements CommandExecutor {
 
         GetCheckpointCoords.getCheckpointCoords();
 
-        int checkpointX2 = (int) DataStorageYml.get().get("checkpointX");
-        int checkpointZ2 = (int) DataStorageYml.get().get("checkpointZ");
+        int checkpointX2 = DataStorageYml.get().getInt("checkpointX");
+        int checkpointZ2 = DataStorageYml.get().getInt("checkpointZ");
 
         String checkpointXString = String.valueOf(checkpointX2);
         String checkpointZString = String.valueOf(checkpointZ2);
@@ -35,8 +35,8 @@ public class CheckpointRegister implements CommandExecutor {
         String checkLoc = (checkLocX + " " + checkLocY + " " + checkLocZ);
         String checkpointCoords = (checkpointXString + " " + checkpointZString);
 
-        int checkpointX3 = Integer.valueOf(DataStorageYml.get().getInt("checkpointX"));
-        int checkpointZ3 = Integer.valueOf(DataStorageYml.get().getInt("checkpointZ"));
+        int checkpointX3 = DataStorageYml.get().getInt("checkpointX");
+        int checkpointZ3 = DataStorageYml.get().getInt("checkpointZ");
 
         if (HavenCheckpointStorage.get().getInt("greatestX") < checkpointX3) {
             HavenCheckpointStorage.get().set("greatestX", checkpointX3);
