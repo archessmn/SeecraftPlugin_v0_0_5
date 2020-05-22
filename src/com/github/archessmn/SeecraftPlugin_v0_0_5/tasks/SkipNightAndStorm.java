@@ -1,6 +1,7 @@
 package com.github.archessmn.SeecraftPlugin_v0_0_5.tasks;
 
 import com.github.archessmn.SeecraftPlugin_v0_0_5.DataStorageYml;
+import com.github.archessmn.SeecraftPlugin_v0_0_5.RoleStorageYml;
 import com.github.archessmn.SeecraftPlugin_v0_0_5.main;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -38,14 +39,18 @@ public class SkipNightAndStorm extends BukkitRunnable {
                 }
 
             }
+            String importCodes = RoleStorageYml.get().getString(player.getDisplayName());
+            String finalCodes = importCodes.replace("%", "§");
+            player.setPlayerListName(finalCodes);
+            player.setCustomName(finalCodes);
             switch (skipped) {
                 case 0:
                     break;
                 case 1:
-                    Bukkit.broadcastMessage(ChatColor.GOLD + player.getName() + ChatColor.YELLOW +  " skipped the night!");
+                    Bukkit.broadcastMessage(finalCodes + ChatColor.YELLOW +  " skipped the night!");
                     break;
                 case 2:
-                    Bukkit.broadcastMessage(ChatColor.GOLD + player.getName() + ChatColor.YELLOW +  " skipped the storm!");
+                    Bukkit.broadcastMessage(finalCodes + ChatColor.YELLOW +  " skipped the storm!");
                     break;
             }
         }

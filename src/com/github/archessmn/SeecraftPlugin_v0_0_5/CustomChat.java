@@ -5,6 +5,8 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
 
+import java.util.Objects;
+
 public class CustomChat implements Listener {
     main plugin;
 
@@ -16,6 +18,11 @@ public class CustomChat implements Listener {
     public void onPlayerChat(AsyncPlayerChatEvent chatEvent) {
         String player = chatEvent.getPlayer().getName();
         String message = chatEvent.getMessage();
-        chatEvent.setFormat(chatEvent.getPlayer().getDisplayName().replaceAll("&([0-9a-f])", RoleStorageYml.get().getString(player)) + ChatColor.WHITE + ": " + ChatColor.WHITE + message);
+        RoleStorageYml.reload();
+        String importName = RoleStorageYml.get().getString(player);
+        String finalName = importName.replace("%", "§");
+        chatEvent.getPlayer().setPlayerListName(finalName);
+        chatEvent.getPlayer().setCustomName(finalName);
+        chatEvent.setFormat(finalName + ChatColor.WHITE + ": " + ChatColor.WHITE + message);
     }
 }

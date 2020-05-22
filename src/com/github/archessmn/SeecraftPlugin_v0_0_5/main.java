@@ -45,4 +45,8 @@ public class main extends JavaPlugin {
         this.getCommand("colour").setExecutor(new SetChatColour());
 
     }
+
+    public void onDisable() {
+        RoleStorageYml.save();
+    }
 }

@@ -15,9 +15,13 @@ public class JoinMessage implements Listener {
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent joinEvent) {
         plugin.reloadConfig();
-        String joinedPlayer = joinEvent.getPlayer().getName();
+        String joinedPlayer = joinEvent.getPlayer().getDisplayName();
         String serverName = plugin.getConfig().getString("ServerName");
-        joinEvent.setJoinMessage(ChatColor.YELLOW + "Welcome to " + serverName + " " + joinedPlayer + "!");
+        String importName = RoleStorageYml.get().getString(joinedPlayer);
+        String finalName = importName.replace("%", "§");
+        joinEvent.getPlayer().setPlayerListName(finalName);
+        joinEvent.getPlayer().setCustomName(finalName);
+        joinEvent.setJoinMessage(ChatColor.YELLOW + "Welcome to " + "§6" + serverName + " " + finalName + ChatColor.YELLOW + "!");
     }
 
 }
