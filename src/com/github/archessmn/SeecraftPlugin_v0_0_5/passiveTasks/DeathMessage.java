@@ -1,7 +1,8 @@
-package com.github.archessmn.SeecraftPlugin_v0_0_5;
+package com.github.archessmn.SeecraftPlugin_v0_0_5.passiveTasks;
 
+import com.github.archessmn.SeecraftPlugin_v0_0_5.main;
+import com.github.archessmn.SeecraftPlugin_v0_0_5.storage.DataStorageYml;
 import org.bukkit.ChatColor;
-import org.bukkit.World;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.PlayerDeathEvent;

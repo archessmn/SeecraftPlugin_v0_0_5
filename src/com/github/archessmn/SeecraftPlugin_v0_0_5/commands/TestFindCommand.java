@@ -1,4 +1,4 @@
-package com.github.archessmn.SeecraftPlugin_v0_0_5;
+package com.github.archessmn.SeecraftPlugin_v0_0_5.commands;
 
 //N = -Z
 //E = X
@@ -7,6 +7,8 @@ package com.github.archessmn.SeecraftPlugin_v0_0_5;
 
 
 
+import com.github.archessmn.SeecraftPlugin_v0_0_5.storage.DataStorageYml;
+import com.github.archessmn.SeecraftPlugin_v0_0_5.storage.HavenCheckpointStorage;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.command.Command;
@@ -15,7 +17,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 
-public class TestFind implements CommandExecutor {
+public class TestFindCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         Location loc = ((Player) sender).getLocation();

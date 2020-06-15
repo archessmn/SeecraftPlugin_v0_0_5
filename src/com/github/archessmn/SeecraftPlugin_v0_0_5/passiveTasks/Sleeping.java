@@ -1,5 +1,7 @@
-package com.github.archessmn.SeecraftPlugin_v0_0_5;
+package com.github.archessmn.SeecraftPlugin_v0_0_5.passiveTasks;
 
+import com.github.archessmn.SeecraftPlugin_v0_0_5.main;
+import com.github.archessmn.SeecraftPlugin_v0_0_5.storage.DataStorageYml;
 import com.github.archessmn.SeecraftPlugin_v0_0_5.tasks.SkipNightAndStorm;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;

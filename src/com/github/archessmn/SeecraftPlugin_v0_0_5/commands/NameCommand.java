@@ -1,5 +1,6 @@
-package com.github.archessmn.SeecraftPlugin_v0_0_5;
+package com.github.archessmn.SeecraftPlugin_v0_0_5.commands;
 
+import com.github.archessmn.SeecraftPlugin_v0_0_5.storage.RoleStorageYml;
 import net.minecraft.server.v1_15_R1.EntityPlayer;
 import net.minecraft.server.v1_15_R1.PacketPlayOutNamedEntitySpawn;
 import org.bukkit.Bukkit;
@@ -9,7 +10,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.craftbukkit.v1_15_R1.entity.CraftPlayer;
 import org.bukkit.entity.Player;
 
-public class SetChatColour implements CommandExecutor {
+public class NameCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         if (sender.isOp()) {

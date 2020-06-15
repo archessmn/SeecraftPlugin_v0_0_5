@@ -20,6 +20,8 @@ commands:
   colour:
     description: Changes the colour of your name in chat (please ask admin).
 
+  superchat:
+    description: SUPER!  CHAT!  SUPER!   CHAT!
 
 permissions:
   member:

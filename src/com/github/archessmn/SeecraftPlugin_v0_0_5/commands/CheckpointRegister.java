@@ -1,5 +1,7 @@
-package com.github.archessmn.SeecraftPlugin_v0_0_5;
+package com.github.archessmn.SeecraftPlugin_v0_0_5.commands;
 
+import com.github.archessmn.SeecraftPlugin_v0_0_5.storage.DataStorageYml;
+import com.github.archessmn.SeecraftPlugin_v0_0_5.storage.HavenCheckpointStorage;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.command.Command;

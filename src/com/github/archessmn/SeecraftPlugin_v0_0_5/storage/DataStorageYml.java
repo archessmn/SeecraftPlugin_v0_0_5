@@ -1,4 +1,4 @@
-package com.github.archessmn.SeecraftPlugin_v0_0_5;
+package com.github.archessmn.SeecraftPlugin_v0_0_5.storage;
 
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.FileConfiguration;

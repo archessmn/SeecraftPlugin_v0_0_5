@@ -7,17 +7,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/SpigotServer/spigot-1.15.2.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://C:/SpigotServer/spigot-1.15.2.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
@@ -26,6 +15,17 @@
         <JAVADOC />
         <SOURCES>
           <root url="jar://D:/BACKUPS-OGDISK-FRESHINSTALL/SpigotServer/spigot-1.15.2.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/SpigotTestServer/spigot-1.15.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://D:/SpigotTestServer/spigot-1.15.2.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
